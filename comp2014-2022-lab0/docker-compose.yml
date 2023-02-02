@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  app:
+    build: docker
+    ports:
+      - "8000:8000"
+    volumes:
+      - ".:/home/gradle/project"
+    command: sleep 1000000
